@@ -25,6 +25,7 @@ Email: gadsby@163.com and oriental-cds@163.com
 # Third party modules
 from rdkit import Chem
 from rdkit.Chem import Lipinski as LPK
+import numpy as np
 
 Version = 1.0
 #############################################################
@@ -709,7 +710,7 @@ def GetConstitutional(mol):
     """
     result = {}
     for DesLabel in _constitutional.keys():
-        result[DesLabel] = round(_constitutional[DesLabel](mol), 3)
+        result[DesLabel] = np.round(_constitutional[DesLabel](mol), 3)
     return result
 
 
