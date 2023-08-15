@@ -565,6 +565,7 @@ class PyMolecule:
         res.update(self.GetBasak())
         res.update(self.GetBurden())
         res.update(self.GetCATS2D())
+        print(res)
 
         return res
 
