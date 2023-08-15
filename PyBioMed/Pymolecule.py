@@ -550,6 +550,7 @@ class PyMolecule:
             res is a dict form.
         #################################################################
         """
+        print("hello")
         res = {}
         res.update(self.GetKappa())
         res.update(self.GetCharge())
